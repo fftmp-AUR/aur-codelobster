@@ -5,7 +5,7 @@
 
 pkgname=codelobster
 pkgver=2.6.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Free cross-platform IDE for PHP/HTML/CSS/JavaScript development'
 arch=('x86_64')
 url="https://www.codelobsteride.com"
@@ -37,9 +37,8 @@ build() {
     cd opt/codelobsteride
     rm libasn1.so.8 libcrypto.so.1.1 libcurl.so.4 libhogweed.so.4 libicudata.so* libicui18n.so* libicuuc.so* libidn.so.11 liblber-2.4.so.2 \
        libldap_r-2.4.so.2 libmysqlclient.so.20 libnettle.so.6 librtmp.so.1 libssl.so.1.1 libquazip.so.1 libxcb-* libQt5* qt.conf QtWebEngineProcess
-    rm -r iconengines imageformats platforms printsupport sqldrivers translations xcbglintegrations
+    rm -r iconengines imageformats platforminputcontexts platforms printsupport sqldrivers translations xcbglintegrations
     rm -r resources # NB: we delete here icudtl.dat, but there is no corresponding file in /usr.
-    rm -r platforminputcontexts # NB: we delete here libcomposeplatforminputcontextplugin.so and libibusplatforminputcontextplugin.so, but there are no corresponding files in /usr.
     find ./ -name "*.so*" -exec chmod -x {} +
 
 # next C++ functions/operators compiled with @Qt_5 version:

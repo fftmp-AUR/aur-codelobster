@@ -1,7 +1,7 @@
 pkgbase = codelobster
 	pkgdesc = Free cross-platform IDE for PHP/HTML/CSS/JavaScript development
 	pkgver = 2.6.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://www.codelobsteride.com
 	arch = x86_64
 	license = custom:codelobster
